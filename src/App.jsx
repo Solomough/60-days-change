@@ -4,7 +4,7 @@ import About from './components/About';
 import Vision from './components/Vision';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
-import FormModal from './components/FormModal';
+import RegistrationForm from './components/RegistrationForm';
 
 export default function App() {
   const [openForm, setOpenForm] = useState(false);
@@ -16,7 +16,7 @@ export default function App() {
       <Vision />
       <CTA onOpenForm={() => setOpenForm(true)} />
       <Footer />
-      {openForm && <FormModal onClose={() => setOpenForm(false)} />}
+      {openForm && <RegistrationForm onClose={() => setOpenForm(false)} />}
     </div>
   );
 }
