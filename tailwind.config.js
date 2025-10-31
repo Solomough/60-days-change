@@ -1,15 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {
-        arkGold: "#FFD700",
-        arkBlue: "#0077FF",
-        arkGreen: "#00FF9C",
+        blueark: '#0044CC',
       },
       fontFamily: {
-        display: ["Poppins", "sans-serif"],
+        sans: ['Poppins', 'sans-serif'],
       },
     },
   },
