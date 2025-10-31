@@ -1,16 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx}'],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        primary: '#0044CC',
-        light: '#E5F0FF'
+        arkGold: "#FFD700",
+        arkBlue: "#0077FF",
+        arkGreen: "#00FF9C",
       },
-      boxShadow: {
-        glow: '0 0 20px rgba(0, 68, 204, 0.6)'
-      }
-    }
+      fontFamily: {
+        display: ["Poppins", "sans-serif"],
+      },
+    },
   },
-  plugins: []
-}
+  plugins: [],
+};
