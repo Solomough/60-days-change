@@ -2,23 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  background-color: #000;
-  color: #fff;
+  background: linear-gradient(135deg, #001133, #0044cc);
   font-family: 'Poppins', sans-serif;
-}
-
-section {
-  min-height: 100vh;
-  scroll-snap-align: start;
-}
-
-.scroll-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
+  overflow-x: hidden;
 }
