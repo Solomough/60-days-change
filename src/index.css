@@ -2,8 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 🌌 Base Style */
 body {
   background: linear-gradient(135deg, #001133, #0044cc);
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* ✨ Glow Effects */
+.glow {
+  text-shadow: 0 0 10px rgba(0, 136, 255, 0.7),
+               0 0 20px rgba(0, 136, 255, 0.5);
+}
+
+.glow-box {
+  box-shadow: 0 0 20px rgba(0, 136, 255, 0.3),
+              0 0 40px rgba(0, 136, 255, 0.2);
+}
+
+/* 💡 Smooth Fade Animations */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+/* 🧩 Input Styling (for form modal) */
+.input {
+  @apply w-full mb-3 border border-gray-300 rounded-lg p-2 text-sm 
+         focus:outline-none focus:ring-2 focus:ring-blueark 
+         focus:border-blueark transition duration-200;
+}
+
+/* 🌠 Futuristic Motion Background (subtle) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 68, 204, 0.2), transparent 70%);
+  background-size: 400% 400%;
+  animation: moveBackground 12s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes moveBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌊 Optional Particle Overlay for Extra Glow */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(0, 136, 255, 0.3) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.1;
+  z-index: -1;
 }
