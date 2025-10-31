@@ -5,7 +5,7 @@ export default function Hero({ onOpenForm }) {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center relative px-6">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,68,204,0.4),transparent)] animate-pulse"></div>
-
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,68,204,0.25),transparent_70%)] blur-3xl"></div>
       <motion.h1
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
